@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio</title>
@@ -14,57 +13,75 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body>
-    <header class="header">
-      <div class="container header__container">
+<body>
+  
+  <header class="header-page">
+    <div class="container">
+      <div class="header-wrapper">
         <nav class="nav">
-          <a href="./index.html" class="logo"
-            >Web<span class="logo logo_color-black">Studio</span></a
-          >
+
+          <a class="logo" href="./index.html"><span class="logo__text prime-color">Web</span>Studio</a>
+
           <ul class="nav__list">
+
             <li class="nav__item">
-              <a href="./index.html" class="nav__link is-active">Studio</a>
+              <a href="./index.html" class="nav__link is-active-link">Studio</a>
             </li>
+
             <li class="nav__item">
-              <a href="" class="nav__link">Portfolio</a>
+              <a href="./index.html" class="nav__link">Portfolio</a>
             </li>
+
             <li class="nav__item">
-              <a href="" class="nav__link">Contacts</a>
+              <a href="./index.html" class="nav__link">Contacts</a>
             </li>
+
           </ul>
+
+          
         </nav>
+
         <address class="address">
-          <ul class="address__list">
-            <li class="address__item">
-              <a class="address__contact" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="address__item">
-              <a class="address__contact" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
-              >
-            </li>
-          </ul>
+            <ul class="address__list">
+              <li class="address__item">
+                <a href="mailto:info@devstudio.com" class="address__link">info@devstudio.com</a>
+              </li>
+
+              <li class="address__item">
+                <a href="tel:+110001111111" class="address__link">+11 (000) 111-11-11</a>
+              </li>
+            </ul>
         </address>
+
+
+
+        <button class="burger-btn" type="button">
+          <svg class="burger-btn__icon" width="18" height="16">
+            <use href="./images/mobile/icons.svg#icon-heroBurger"></use>
+          </svg>
+        </button>
       </div>
-    </header>
-    <main>
-      <section class="hero section">
-        <div class="container">
-          <h1 class="hero__title">Effective Solutions for Your Business</h1>
-          <button class="button" type="button">Order Service</button>
-        </div>
-      </section>
+      
+    </div>
+  </header>
 
-      <section class="quality section">
-        <div class="container">
-          <h2 class="quality__title visually-hidden">Quality</h2>
+  <main>
 
-          <ul class="quality-list">
+    <section class="hero hero__section">
+      <div class="container">
+        <h1 class="hero__title">Effective Solutions for Your Business</h1>
+        <button type="button" class="main-btn">Order Service</button>
+      </div>
+    </section>
+
+    <section class="quality section">
+      <div class="container">
+
+        <h2 class="quality__title visually-hidden">Quality</h2>
+
+        <ul class="quality-list">
             <li class="quality-list__item">
               <div class="quality-list__container">
                 <svg class="quality-list__icon" width="64" height="64">
@@ -114,20 +131,22 @@
               </p>
             </li>
           </ul>
-        </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section team">
-        <div class="container">
-          <h2 class="team__title">Our Team</h2>
+    <section class="team section">
+      <div class="container">
+
+         <h2 class="team__title">Our Team</h2>
 
           <ul class="team-list">
             <li class="team-list__item">
               <div class="team-list_imgs">
                 <img
                   class="team-list_img"
+                  srcset="./images/our-team/markGuerrero2x.jpg"
                   src="./images/our-team/markGuerrero.jpg"
-                  alt="markGuerrero"
+                  alt="markGuerrero" width="264"
                 />
               </div>
 
@@ -184,8 +203,9 @@
               <div class="team-list_imgs">
                 <img
                   class="team-list_img"
+                  srcset="./images/our-team/tomFord2x.jpg"
                   src="./images/our-team/tomFord.jpg"
-                  alt="tomFord"
+                  alt="tomFord" width="264"
                 />
               </div>
 
@@ -242,8 +262,9 @@
               <div class="team-list_imgs">
                 <img
                   class="team-list_img"
-                  src="./images/our-team/camilaGarcia.jpg"
-                  alt="camilaGarcia"
+                  srcset="./images/our-team/camilaGarcia2x.jpg"
+                  src="./images/our-team/camilaGarcia2x.jpg"
+                  alt="camilaGarcia" width="264"
                 />
               </div>
 
@@ -300,8 +321,9 @@
               <div class="team-list_imgs">
                 <img
                   class="team-list_img"
+                  srcset="./images/our-team/danielWilson2x.jpg"
                   src="./images/our-team/danielWilson.jpg"
-                  alt="danielWilson"
+                  alt="danielWilson" width="264"
                 />
               </div>
 
@@ -354,10 +376,10 @@
               </div>
             </li>
           </ul>
-        </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="portfolio section">
+    <section class="portfolio section" id="portfolio">
         <div class="container">
           <h2 class="portfolio__title">Our Portfolio</h2>
 
@@ -365,8 +387,10 @@
             <li class="portfolio-list__item">
               <div class="portfolio-list__container">
                 <img
+                  srcset="./images/mobile/bankingApp2x.jpg"
                   class="portfolio-list__img"
-                  src="./images/our-portfolio/banking-app.jpg"
+                  src="./images/mobile/bankingApp
+                  .jpg"
                   alt="banking-app"
                   width="360"
                 />
@@ -387,8 +411,9 @@
             <li class="portfolio-list__item">
               <div class="portfolio-list__container">
                 <img
+                srcset="./images/mobile/cashleesPayment2x.jpg"
                   class="portfolio-list__img"
-                  src="./images/our-portfolio/cashlees-payment.jpg"
+                  src="./images/mobile/cashleesPayment.jpg"
                   alt="cashlees-payment"
                   width="360"
                 />
@@ -410,7 +435,8 @@
               <div class="portfolio-list__container">
                 <img
                   class="portfolio-list__img"
-                  src="./images/our-portfolio/meditation-app.jpg"
+                  srcset="./images/mobile/meditationApp2x.jpg"
+                  src="./images/mobile/meditationApp.jpg"
                   alt="meditation-app"
                   width="360"
                 />
@@ -432,7 +458,8 @@
               <div class="portfolio-list__container">
                 <img
                   class="portfolio-list__img"
-                  src="./images/our-portfolio/taxi-service.jpg"
+                  srcset="./images/mobile/taxiService2x.jpg"
+                  src="./images/mobile/taxiService.jpg"
                   alt="taxi-service"
                   width="360"
                 />
@@ -454,7 +481,8 @@
               <div class="portfolio-list__container">
                 <img
                   class="portfolio-list__img"
-                  src="./images/our-portfolio/screen-illustritions.jpg"
+                  srcset="./images/mobile/screenIllustrations2x.jpg"
+                  src="./images/mobile/screenIllustrations.jpg"
                   alt="screen-illustritions"
                   width="360"
                 />
@@ -476,7 +504,8 @@
               <div class="portfolio-list__container">
                 <img
                   class="portfolio-list__img"
-                  src="./images/our-portfolio/online-courses.jpg"
+                  srcset="./images/mobile/onlineCourses2x.jpg"
+                  src="./images/mobile/onlineCourses.jpg"
                   alt="online-courses"
                   width="360"
                 />
@@ -496,85 +525,91 @@
           </ul>
         </div>
       </section>
-    </main>
 
-    <footer class="footer">
+  </main>
+
+  <footer class="footer section" id="contacts">
       <div class="container">
-        <div class="side-content">
-          <a href="./index.html" class="logo"
-            >Web<span class="logo logo_color-white">Studio</span></a
-          >
-          <p class="webstudio-contant__description">
-            Increase the flow of customers and sales for your business with
-            digital marketing & growth solutions.
-          </p>
-        </div>
+        
 
-        <div class="mid-content">
-          <p class="mid-content__description">Social media</p>
+          <div class="side-content">  
+            <div class="footer-logo__wrapper">
+              <a class="logo" href="./index.html"><span class="logo__text prime-color">Web</span>Studio</a>
 
-          <ul class="mid-list">
-            <li class="mid-list__item">
-              <a class="mid-list__link" href="https://www.instagram.com/">
-                <svg class="mid-list__icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-instagram"></use>
+            
+            
+              <p class="webstudio-contant__description">
+              Increase the flow of customers and sales for your business with
+              digital marketing & growth solutions.
+              </p>
+          </div>
+
+          <div class="mid-content">
+            <p class="mid-content__description">Social media</p>
+
+            <ul class="mid-list">
+              <li class="mid-list__item">
+                <a class="mid-list__link" href="https://www.instagram.com/">
+                  <svg class="mid-list__icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="mid-list__item">
+                <a class="mid-list__link" href="https://twitter.com/?lang=ru">
+                  <svg class="mid-list__icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="mid-list__item">
+                <a class="mid-list__link" href="https://uk-ua.facebook.com/">
+                  <svg class="mid-list__icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="mid-list__item">
+                <a class="mid-list__link" href="https://www.linkedin.com/">
+                  <svg class="mid-list__icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="side-right-content">
+            <p class="side-right-content__title">Subscribe</p>
+
+            <form action="#" class="form-subscribe">
+              <label for="subscribe-email" class="form-subscribe__label">
+                <input
+                  class="form-subscribe__input"
+                  type="email"
+                  placeholder="E-mail"
+                  required
+                  name="subscribe-email"
+                  id="subscribe-email"
+                />
+              </label>
+
+              <button class="form-subscribe__btn" type="submit">
+                Subscribe
+                <svg class="form-subscribe__icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-send"></use>
                 </svg>
-              </a>
-            </li>
+              </button>
+            </form>
+          </div>
 
-            <li class="mid-list__item">
-              <a class="mid-list__link" href="https://twitter.com/?lang=ru">
-                <svg class="mid-list__icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li class="mid-list__item">
-              <a class="mid-list__link" href="https://uk-ua.facebook.com/">
-                <svg class="mid-list__icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li class="mid-list__item">
-              <a class="mid-list__link" href="https://www.linkedin.com/">
-                <svg class="mid-list__icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="side-right-content">
-          <p class="side-right-content__title">Subscribe</p>
-
-          <form action="#" class="form-subscribe">
-            <label for="subscribe-email" class="form-subscribe__label">
-              <input
-                class="form-subscribe__input"
-                type="email"
-                placeholder="E-mail"
-                required
-                name="subscribe-email"
-                id="subscribe-email"
-              />
-            </label>
-
-            <button class="form-subscribe__btn" type="submit">
-              Subscribe
-              <svg class="form-subscribe__icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-send"></use>
-              </svg>
-            </button>
-          </form>
-        </div>
       </div>
     </footer>
 
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <button class="close-btn" type="button">
           <svg class="close-btn__icon" width="8" height="8">
@@ -671,19 +706,97 @@
               class="modal-form__label modal-form__label--appere"
             >
               <span class="review-form-own-checkbox">
-                <svg class="modal-form__icon-box" width="10" height="8">
+                <svg class="modal-form__icon-box" width="8" height="8">
                   <use href="./images/icons.svg#icon-arrow"></use>
                 </svg>
               </span>
 
-              I accept the terms and conditions of the
+              <span class="modal-form__description">I accept the terms and conditions of the</span>
+              
               <a class="modal-form__link" href="#">Privacy Policy</a>
             </label>
           </div>
 
-          <button type="submit" class="button">Send</button>
+          <button type="submit" class="main-btn">Send</button>
         </form>
       </div>
-    </div>
-  </body>
+    </div> 
+
+    <div class="backdrop-menu">
+      <div class="modal-menu">
+        <div class="modal-wrapper">
+
+        <button class="close-btn-menu" type="button">
+          <svg class="close-btn__icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+
+        <ul class="modal-menu__list">
+          <li class="modal-menu__item">
+            <a href="./index.html" class="modal-menu__link">Studio</a>
+          </li>
+          <li class="modal-menu__item">
+            <a href="#portfolio" class="modal-menu__link">Portfolio</a>
+          </li>
+          <li class="modal-menu__item">
+            <a href="#contacts" class="modal-menu__link">Contacts</a>
+          </li>
+          </ul>
+        </nav>
+
+          <address class="menu-address">
+        <ul class="menu-address__list">
+          <li class="menu-address__item">
+            <a class="menu-address__contact" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="menu-address__item ">
+            <a class="menu-address__contact prime-color" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+        </ul>
+          </address>
+
+        <ul class="mid-list">
+              <li class="mid-list__item">
+                <a class="mid-list__link" href="https://www.instagram.com/">
+                  <svg class="mid-list__icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="mid-list__item">
+                <a class="mid-list__link" href="https://twitter.com/?lang=ru">
+                  <svg class="mid-list__icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="mid-list__item">
+                <a class="mid-list__link" href="https://uk-ua.facebook.com/">
+                  <svg class="mid-list__icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="mid-list__item">
+                <a class="mid-list__link" href="https://www.linkedin.com/">
+                  <svg class="mid-list__icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+        </div>
+      </div>
+    </div> 
+
+    <script type="module" src="./js/script.js"></script>
+</body>
 </html>
