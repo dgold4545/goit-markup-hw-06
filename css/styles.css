@@ -370,6 +370,7 @@ input {
 
 @media screen and (min-width: 1158px) and (min-resolution: 192dpi) {
   .hero {
+    max-width: 1440px;
     background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -448,7 +449,9 @@ input {
     border: 1px solid #000;
     border-radius: 4px;
   }
-
+   .quality-list__title {
+  font-size: 20px;
+   }
   }
 
 
