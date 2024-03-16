@@ -1190,11 +1190,15 @@ input {
   /* margin-bottom: 40px; */
 }
 
-
-
-.modal-menu__item:last-child {
-  margin-bottom: 168px;
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
 }
+
+/* .modal-menu__item:last-child {
+  margin-bottom: 168px;
+} */
 .modal-menu__link {
   display: block;
   font-weight: 700;
@@ -1220,8 +1224,6 @@ input {
 .menu-address__list {
  display: flex;
  flex-direction: column-reverse;
- margin-bottom: 40px;
- 
 }
 .menu-address__item:not(:first-child) {
    margin-bottom: 24px;
