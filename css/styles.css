@@ -1155,12 +1155,10 @@ input {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-width: 320px;
+  /* max-width: 320px; */
   height: 100vh;
   padding: 72px 16px 40px 16px;
-  margin-left: auto;
-  margin-right: auto;
-  /* border: 1px solid #000; */
+  
 }
 
 .close-btn-menu {
