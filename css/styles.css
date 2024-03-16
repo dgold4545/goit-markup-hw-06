@@ -394,9 +394,11 @@ input {
   flex-direction: column;
   gap: 72px;
 }
-/* .quality-list__item:not(:last-child) {
-  margin-bottom: 72px;
-} */
+.quality-list__item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
 
 .quality-list__title {
   font-size: 36px;
@@ -404,7 +406,7 @@ input {
   letter-spacing: 0.02em;
   text-align: center;
   color: var(--navy-blue);
-  margin-bottom: 8px;
+  
 }
 
 .quality-list__description {
@@ -658,7 +660,7 @@ input {
     gap: 72px 24px;
   }
   .portfolio-list__item {
-    width: calc((100% - 48px) / 2);
+    width: calc((100% - 24px) / 2);
   }
 }
 
@@ -668,7 +670,7 @@ input {
   }
 
   .portfolio-list__item {
-    width: calc((100% - 72px) / 3);
+    width: calc((100% - 48px) / 3);
   }
 }
 /* 
