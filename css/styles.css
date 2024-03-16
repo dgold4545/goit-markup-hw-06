@@ -325,7 +325,7 @@ input {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url('../images/tablet/tablet-bg.jpg');
+      url('../images/tablet/tabletBg.jpg');
   }
 
   .hero__title {
@@ -346,7 +346,7 @@ input {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url('../images/tablet/tablet-bg.jpg@2x');
+    url('../images/tablet/tabletBg@2x.jpg');
   }
 }
 
@@ -364,7 +364,7 @@ input {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url('../images/desctop/desctop-bg@2x.jpg');
+      url('../images/desctop/desctop-bg.jpg');
   }
 }
 
