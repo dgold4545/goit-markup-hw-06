@@ -1152,8 +1152,12 @@ input {
   
 .modal-wrapper {
   position: relative;
-  max-width: 288px;
-  padding: 72px 16px 24px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 320px;
+  height: 100vh;
+  padding: 72px 16px 40px 16px;
   margin-left: auto;
   margin-right: auto;
   /* border: 1px solid #000; */
@@ -1161,8 +1165,8 @@ input {
 
 .close-btn-menu {
   position: absolute;
-  top: 16px;
-  right: 0px;
+  top: 24px;
+  right: 24px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -1180,9 +1184,12 @@ input {
 }
 
 .modal-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 .modal-menu__item {
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
 }
 
 
