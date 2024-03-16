@@ -41,7 +41,7 @@ ul {
 }
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
 }
 
 a {
@@ -402,6 +402,7 @@ input {
 
 .quality-list__title {
   font-size: 36px;
+  font-weight: 500;
   line-height: 1.11111;
   letter-spacing: 0.02em;
   text-align: center;
@@ -411,6 +412,7 @@ input {
 
 .quality-list__description {
   font-size: 16px;
+  font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate);
@@ -439,21 +441,16 @@ input {
 
   .quality-list__container {
     background-color: var(--cloud);
-    padding: 24px 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 112px;
     border: 1px solid #000;
-    
     border-radius: 4px;
   }
 
-  .quality-list__title {
-    font-size: 20px;
-    line-height: 1.2;
   }
-}
+
 
 /* 
     ///QUALITY SECTION
@@ -511,6 +508,7 @@ input {
 
 .team-list__description {
   font-size: 16px;
+  font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
